@@ -16,10 +16,15 @@ p {
 <body>
 
 <p id="demo"></p>
+<div id="redirect-btn" style="display: none;">
+<a href="https://jhe54.github.io/redirect" target="_blank"><button>Go</button></a></div>
+<div>
+  <p>Please don't try and change the time on your computer. It's not gonna work.</p>
+</div>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("June 21, 2021 00:00:00").getTime();
+var countDownDate = new Date("June 23, 2021 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -44,12 +49,25 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("redirect-btn").style.display = "block";
   }
 }, 1000);
 </script>
 
+<p id="demo2"></p>
+
+<script>
+  const eventt = new Date(Date.UTC(2021, 6, 23, 4, 0, 0));
+
+  console.log(eventt.toLocaleString('en-US', {timeZone: 'UTC'}));
+</script>
+
+<!--
 <div>Time left = <span id="timer"></span></div>
-<button id="redirect-btn" style="display: none;"><a href="https://jasonhe54.github.io/beta">Go On</a></button>
+<div id="redirect-btn" style="display: none;">
+<a href="https://jasonhe54.github.io/beta"><button>GO</button></a>
+</div>
+
 
 <script type="text/javascript">
   document.getElementById('timer').innerHTML =
@@ -82,6 +100,6 @@ function checkSecond(sec) {
   return sec;
 }
 </script>
-
+-->
 </body>
 </html>

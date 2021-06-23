@@ -1,10 +1,27 @@
 body{
-  background-color:#2D3047;
+  background-color: black;
 }
 
 div{
-  background-color:#419D78;
+  background-color: black;
   color:#EFD0CA;
   font-size:20px;
   text-align:center;
+}
+
+#demo {
+  color: white;
+}
+
+.span-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
